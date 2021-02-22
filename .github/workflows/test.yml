@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.4
+      - uses: actions/setup-node@v2.1.5
         with:
           node-version: "12.x"
       - run: npm install && npm run lint
@@ -55,7 +55,7 @@ jobs:
       image: ${{ matrix.docker_image }}
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.4
+      - uses: actions/setup-node@v2.1.5
         with:
           node-version: "12.x"
       - run: .github/workflows/build-and-test.sh
@@ -78,7 +78,7 @@ jobs:
         ros_distribution: [eloquent, foxy]
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.4
+      - uses: actions/setup-node@v2.1.5
         with:
           node-version: "12.x"
       - run: .github/workflows/build-and-test.sh
@@ -144,7 +144,7 @@ jobs:
       image: ${{ matrix.docker_image }}
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.4
+      - uses: actions/setup-node@v2.1.5
         with:
           node-version: "12.x"
       - run: .github/workflows/build-and-test.sh
@@ -178,7 +178,7 @@ jobs:
         ros_distribution: [foxy, rolling]
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.4
+      - uses: actions/setup-node@v2.1.5
         with:
           node-version: "12.x"
       - run: .github/workflows/build-and-test.sh
@@ -311,7 +311,7 @@ jobs:
       image: ${{ matrix.docker_image }}
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.4
+      - uses: actions/setup-node@v2.1.5
         with:
           node-version: "12.x"
       - run: .github/workflows/build-and-test.sh
